@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Runtime routing is in public/_redirects, copied by Vite into dist/_redirects.
+# Production API functionality is disabled unless a hosted service is configured.
+# Project privacy is an account/dashboard setting; this file does not make a site private.
+
