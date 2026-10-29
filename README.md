@@ -70,3 +70,7 @@ The original 8765 launchers and model adapters remain available for legacy use; 
 ## Render + Netlify deployment
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for the complete manual sequence and environment settings. No external deployment or push has been performed. See [DATA_VERSION.json](DATA_VERSION.json) for the packaged snapshot identity.
+
+## Best Squad
+
+See [BEST_SQUAD.md](BEST_SQUAD.md) for the endpoint, original optimizer objective, validation and rollout order.

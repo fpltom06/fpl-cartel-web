@@ -1,8 +1,8 @@
 import {useState} from 'react';
 import {NavLink,Outlet,Link} from 'react-router-dom';
-import {ChartNoAxesCombined,LayoutDashboard,Users,ArrowLeftRight,Layers,CalendarDays,Settings,PanelLeftClose,PanelLeftOpen,Menu,X,RefreshCw,ChevronDown,Shield,Target,Crown} from 'lucide-react';
+import {ChartNoAxesCombined,LayoutDashboard,Users,ArrowLeftRight,Layers,Settings,PanelLeftClose,PanelLeftOpen,Menu,X,RefreshCw,ChevronDown,Shield,Target} from 'lucide-react';
 import {useProjections} from '../projections/ProjectionProvider';
-const groups=[{label:'',items:[{path:'/',name:'Dashboard',icon:LayoutDashboard}]},{label:'PROJECTIONS',items:[{path:'/projections',name:'Player Projections',icon:ChartNoAxesCombined},{path:'/captaincy',name:'Captaincy',icon:Crown}]},{label:'MY TEAM',items:[{path:'/team-sheet',name:'Team Sheet',icon:Users},{path:'/transfers',name:'Transfers',icon:ArrowLeftRight}]},{label:'OPTIMIZERS',items:[{path:'/best-squad',name:'Best Squad',icon:Layers},{path:'/planner',name:'Multi-GW Planner',icon:CalendarDays}]}];
+const groups=[{label:'',items:[{path:'/',name:'Dashboard',icon:LayoutDashboard}]},{label:'PROJECTIONS',items:[{path:'/projections',name:'Player Projections',icon:ChartNoAxesCombined}]},{label:'MY TEAM',items:[{path:'/team-sheet',name:'Team Sheet',icon:Users},{path:'/transfers',name:'Transfers',icon:ArrowLeftRight}]},{label:'OPTIMIZERS',items:[{path:'/best-squad',name:'Best Squad',icon:Layers}]}];
 export function Layout(){
 const {dataset,loading,refresh}=useProjections();
 const planning=dataset?.gameweeks[0];

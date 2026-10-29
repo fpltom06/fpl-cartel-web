@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 import {ArrowUpRight,ChartNoAxesCombined,Users,ArrowLeftRight,Layers,ArrowRight,Activity,CalendarDays,ShieldCheck} from 'lucide-react';
 import {useProjections} from '../components/projections/ProjectionProvider';
 import {pointsFor} from '../services/projections';
-const tools=[{title:'Player Projections',desc:'View projected points across upcoming gameweeks.',path:'/projections',icon:ChartNoAxesCombined,tag:'AVAILABLE',featured:true},{title:'Team Sheet Optimizer',desc:'Optimize your XI, captain and bench.',path:'/team-sheet',icon:Users},{title:'Transfer Optimizer',desc:'Find the best moves for your squad.',path:'/transfers',icon:ArrowLeftRight},{title:'Best Squad',desc:'Build the highest projected squad for your budget.',path:'/best-squad',icon:Layers}];
+const tools=[{title:'Player Projections',desc:'View projected points across upcoming gameweeks.',path:'/projections',icon:ChartNoAxesCombined,tag:'AVAILABLE',featured:true},{title:'Team Sheet Optimizer',desc:'Optimize your XI, captain and bench.',path:'/team-sheet',icon:Users},{title:'Transfer Optimizer',desc:'Find the best moves for your squad.',path:'/transfers',icon:ArrowLeftRight},{title:'Best Squad',desc:'Build the highest projected squad for your budget.',path:'/best-squad',icon:Layers,tag:'AVAILABLE'}];
 export function Dashboard(){
 const {dataset}=useProjections();
 const range=dataset?.gameweeks.slice(0,5)??[];
